@@ -1,0 +1,30 @@
+CACHE MANIFEST
+#vertion 2.2
+ index.html
+ image/selectPic/background.png
+ script/jquery.min.js
+ script/jquery.iosslider.min.js
+ image/selectPic/1.png
+ image/selectPic/2.png
+ image/selectPic/3.png
+ image/selectPic/4.png
+ image/selectPic/5.png
+ image/selectPic/6.png
+ image/selectPic/7.png
+ image/selectPic/8.png
+ image/selectPic/9.png
+ image/selectPic/10.png
+ image/selectPic/11.png
+ image/selectPic/12.png
+ image/selectPic/13.png
+ image/selectPic/14.png
+ image/selectPic/15.png
+ image/selectPic/16.png
+ image/selectPic/17.png
+ image/selectPic/18.png
+ image/selectPic/banzi.png
+ NETWORK:
+
+ CACHE:
+
+ FALLBACK:

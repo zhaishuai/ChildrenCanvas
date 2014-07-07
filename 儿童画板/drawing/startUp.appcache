@@ -1,0 +1,11 @@
+CACHE MANIFEST
+#vertion 2.0
+ image/startup.gif
+ script/jquery.min.js
+ startUp.html
+ NETWORK:
+
+ CACHE:
+ 
+ FALLBACK:
+	

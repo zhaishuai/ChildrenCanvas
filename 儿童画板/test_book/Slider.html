@@ -1,0 +1,93 @@
+/<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script src="jquery.min.js"></script>
+<script>
+	$(document).ready(function(e){
+		$("#main").css("width",screen.width);
+		$("#main").css("height",screen.height);
+		$("#canvas").css("width",screen.width);
+		$("#canvas").css("height",screen.height);
+		$("#up").css("width",screen.width);
+		$("#up").css("height",screen.height*0.1);
+		$("#down").css("width",screen.width);
+		$("#down").css("height",screen.height*0.1);
+		$("#down").css("top",screen.height - screen.height*0.1);
+		$("#down").css("left",0);
+	
+		$("#down").mousedown(function(e){
+			alert("Hello");
+			});
+		
+		
+		
+		});
+</script>
+<style>
+#canvas
+{
+	height:510px;
+	width:2.646in;
+	background-color:#9F3;
+	position:absolute;
+	z-index:2;
+	left: 0px;
+	top: 0px;
+}
+#main
+{
+	height:509px;
+	width:301px;
+	background-color:#F00;
+	overflow:scroll;
+	z-index:1;
+	position:absolute;
+}
+#up
+{
+	background-color:#30F;
+	width:2.448in;
+	height:42px;
+	position:absolute;
+	z-index:3;
+	left: 0px;
+	top: 0px;
+}
+#down
+{
+	background-color:#3FF;
+	width:2.344in;
+	height:45px;
+	position:absolute;
+	z-index:4;
+	left: 1px;
+	top: 464px;
+}
+#Point
+{
+	background-color:#F00;
+	position:absolute;
+	width: 32px;
+	height: 15px;
+	left: 190px;
+	top: 441px;
+	z-index:5;
+}
+</style>
+</head>
+
+<body>
+<div id="main" >
+	<div id="up">
+    </div>
+  <div id="canvas">
+    </div>
+    <div id="Point">
+    </div>
+    <div id="down">
+    </div>
+</div>
+</body>
+</html>

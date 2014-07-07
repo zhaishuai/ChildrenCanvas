@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Web截屏控件标准版演示页面</title>
+    <link type="text/css" rel="Stylesheet" href="ScreenCapture/ScreenCapture.css" />
+    <script type="text/javascript" src="ScreenCapture/ScreenCapture.js" charset="utf-8"></script>
+</head>
+<body>
+	<div id="ScreenCaptureMessage">
+		<div id="CaptureMessage">
+			<img alt="进度图标" src="ScreenCapture/SL_Uploading.gif" /><span>图片上传中...</span><span>10%</span>
+		</div>
+		<input id="BtnCapture" type="button" value="截取屏幕区域" />
+		<input id="BtnCapture2" type="button" value="截取整个屏幕" />
+		<img id="ScreenImg" alt="截屏图片" style="display: none" />
+	</div>
+	<script type="text/javascript" language="javascript">
+		var screenCapture = new CaptureManager("CaptureMessage");
+		//screenCapture.Config["PostUrl"] = "http://www.ncmem.com/products/screencapture/demo/upload.aspx";
+		screenCapture.Config["PostUrl"] = "http://localhost:1830/asp.net/upload.aspx";
+		screenCapture.Config["EncodeType"] = "GB2312";
+
+		window.onload = function()
+		{
+			//初始化截屏控件
+			screenCapture.Init();
+
+			document.getElementById("BtnCapture").attachEvent("onclick", CaptureRect);
+			document.getElementById("BtnCapture2").attachEvent("onclick", CaptureScreen);
+		}
+
+		function CaptureRect(){
+			screenCapture.Capture();
+		}
+		function CaptureScreen()
+		{
+			screenCapture.CaptureScreen();
+		}
+	</script>
+</body>
+</html>

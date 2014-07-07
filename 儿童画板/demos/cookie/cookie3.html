@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>cookietest3</title>
+
+
+<script type="text/javascript">
+
+		
+		
+		//获得cookie
+		function getCookie(Name) 
+		{ 
+			var search = Name + "=" ;
+			
+			if(document.cookie.length > 0) 
+			{ 
+			  
+				offset = document.cookie.indexOf(search) 
+				if(offset != -1) 
+				{ 
+					offset += search.length 
+					end = document.cookie.indexOf(";", offset) 
+					if(end == -1) end = document.cookie.length 
+					return unescape(document.cookie.substring(offset, end)) 
+				} 
+				else return "";
+			} 
+		} 
+     //点击如片获得cookie
+	function getName(){
+			var button=document.getElementById("button");
+			var inhtml=document.getElementById("inhtml");
+			button.onclick=function(){
+				
+				var name=getCookie("username") ;
+				
+				inhtml.innerHTML=name;
+			}
+		
+		}
+	
+</script>
+</head>
+
+<body onload="getName();">
+
+
+<img src="1.jpg" id="button">
+<span id="inhtml"></span>
+</body>
+</html>

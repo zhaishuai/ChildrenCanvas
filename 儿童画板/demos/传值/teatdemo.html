@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script type="text/javascript">
+	function test(){
+		
+		var img1= document.getElementById("img1");
+		var img2= document.getElementById("img2");
+		//获得alt的属性
+		var parm1=img1.getAttribute("alt");
+		var parm2=img2.getAttribute("alt");
+		//url
+		img1.onclick=function(){
+			var myurl="test2.html"+"?"+"parm1="+parm1;
+			window.location.assign(myurl); 
+			}
+			
+		   img2.onclick=function(){
+			var myurl="test2.html"+"?"+"parm2="+parm2;
+			window.location.assign(myurl); 
+			}	
+			
+			
+		}
+</script>
+</head>
+
+<body onload="test();">
+<img src="1.jpg" id="img1" alt="myimg1">
+<img src="2.jpg" id="img2" alt="myimg2">
+
+</body>
+
+
+
+
+</html>

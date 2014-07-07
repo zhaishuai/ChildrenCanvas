@@ -1,0 +1,93 @@
+@charset "UTF-8";
+*{margin:0;padding:0;}
+
+.struct_body
+{
+	//background-color:#CF0;
+	width:600px;
+	height:600px;
+	position:absolute;
+	overflow:hidden;
+	z-index:2;
+}
+.struct_sheet
+{
+	
+	float:left;
+	width: 400px;
+	height: 400px;
+	top:840px;
+	position:absolute;
+	z-index:4;
+	overflow-x:scroll;overflow-y:hidden;-webkit-overflow-scrolling:touch;  -webkit-box-flex:1;
+}
+.struct_head
+{
+	//background-color:#FF0;
+	width:400px;
+	height:100px;
+	top:0px;
+	position:absolute;
+	z-index:4;
+}
+.struct_head ul
+{
+	margin:0;
+	padding:0;
+	padding-left:10px;
+	list-style-type:none;
+}
+.struct_head ul li
+{
+	float:left;
+	margin-right:10px;
+	//background-color:#FF0;
+	width:60px;
+	height:80px;
+}
+.struct_head ul li img
+{
+	height:inherit;
+	width:inherit;
+}
+.struct_sheet ul
+{
+	margin:0;
+	padding:0;
+	list-style-type:none;
+
+	width:1200px;
+}
+.struct_sheet ul li
+{
+	float:left;
+}
+
+#paint_canvas_div
+{
+	position:absolute;
+	z-index:1;
+	
+}
+#image_canvas_div
+{
+	position:absolute;
+	z-index:2;
+	
+}
+#ball_canvas_div
+{
+	position:absolute;
+	z-index:3;
+	
+}
+#hideButton
+{
+	position: absolute;
+	width: 50px;
+	height: 20px;
+	background-color: #F00;
+	z-index: 5;
+	left: 273px;
+	top: device-width;
+}

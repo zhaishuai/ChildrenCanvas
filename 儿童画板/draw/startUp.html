@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" manifest="startUp.appcache">
+<head>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="format-detection" content="telephone=no">
+<meta name = "viewport" content = "width = device-width">
+<meta name = "viewport" content = "height = device-height">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+<title>Untitled Document</title>
+<script src="script/jquery.min.js"></script>
+<script>
+	$(document).ready(function(e) {
+        zs_screenWidth = screen.availWidth;
+		zs_screenHeight = screen.availHeight;
+		$("#play").css("width",zs_screenWidth);
+		$("#play").css("height",zs_screenHeight);
+    });
+</script>
+</head>
+
+<body>
+<div >
+	<img id="play" src="image/startup.gif"></img>
+</div>
+</body>
+</html>

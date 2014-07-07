@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery special event API on hammerjs</title>
+<script src="script/jquery.min.js"></script>
+<script src="script/hammer.js"></script>
+<script src="script/jquery.specialevent.hammer.js"></script>
+    <style>
+        #hide1{
+            border: 3px dashed orange;
+            line-height: 300px;
+            height: 300px;
+            text-align: center;
+            font-size: 3em;
+			position: absolute;
+            width: 100%;
+        }
+#hideButton
+{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	background-color: #F00;
+	z-index: 5;
+	left: 273px;
+	top: 390px;
+}
+
+    </style>
+</head>
+<body>
+    <div id="hide1">
+    </div>
+    <div id="output">
+    </div>
+     <div id="hideButton">
+    </div>
+    <script>
+
+            var $sw = $('#pp'),
+                $output = $('#output');
+
+            $('#hideButton').on('tap ', function (event) {
+                event.preventDefault();
+
+			alert("Hello");
+            });
+
+            // this is how you unbind an event
+            /*$sw.on('swipe', function (event) {
+                event.preventDefault();
+
+                $sw.off('tap');
+            });*/
+			
+
+		
+		
+    </script>
+    
+
+    
+</body>
+</html>

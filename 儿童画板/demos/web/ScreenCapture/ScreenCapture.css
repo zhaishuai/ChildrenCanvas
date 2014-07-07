@@ -1,0 +1,7 @@
+﻿/*文件列表框*/
+#CaptureMessage
+{
+    font-family: 新宋体;font-size: 12px; background-color: #FFFFFF; display:none;
+}
+#CaptureMessage img{ float:left; border:0;}
+#CaptureMessage span{ float:left;}

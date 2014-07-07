@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script src="jquery.min.js"></script>
+<script src="jquery.iosslider.min.js"></script>
+<script>
+			$(document).ready(function() {
+				$('.iosSlider').iosSlider({
+					scrollbar: true,
+					snapToChildren: true,
+					desktopClickDrag: true,
+					scrollbarMargin: '5px 40px 0 40px',
+					scrollbarBorderRadius: 0,
+					scrollbarHeight: '2px',
+					navPrevSelector: $('.prevButton'),
+					navNextSelector: $('.nextButton')
+				});
+				
+			});
+</script>
+<style>
+.iosSlider
+{
+	
+	width:400px;
+	height:400px;
+	overflow:hidden;
+}
+#displayPicture
+{
+	
+	width:400px;
+	height:400px;
+
+}
+#displayPicture ul
+{
+	background-image:url(image/muban.png);
+	margin:0;
+	padding:0;
+	list-style-type:none;
+}
+#displayPicture ul li
+{
+	float:left;
+	margin-top:10%;
+	margin-left:10%;
+}
+</style>
+</head>
+
+<body>
+<div class="iosSlider">
+    <div id="displayPicture">
+    <ul>
+    <li><img src="mymusic.png"></img></li>
+    <li><img src="mymusic.png"></img></li>
+    <li><img src="mymusic.png"></img></li>
+    <li><img src="mymusic.png"></img></li>
+    <li><img src="mymusic.png"></img></li>
+    <li><img src="mymusic.png"></img></li>
+    <li><img src="mymusic.png"></img></li>
+    <li><img src="mymusic.png"></img></li>
+    <li><img src="mymusic.png"></img></li>
+    </ul>
+        <ul>
+    <li><img src="mymusic.png"></img></li>
+    <li><img src="mymusic.png"></img></li>
+    <li><img src="mymusic.png"></img></li>
+    <li><img src="mymusic.png"></img></li>
+    <li><img src="mymusic.png"></img></li>
+    <li><img src="mymusic.png"></img></li>
+    <li><img src="mymusic.png"></img></li>
+    <li><img src="mymusic.png"></img></li>
+    <li><img src="mymusic.png"></img></li>
+    </ul>
+            <ul>
+    <li><img src="mymusic.png"></img></li>
+    <li><img src="mymusic.png"></img></li>
+    <li><img src="mymusic.png"></img></li>
+    <li><img src="mymusic.png"></img></li>
+    <li><img src="mymusic.png"></img></li>
+    <li><img src="mymusic.png"></img></li>
+    <li><img src="mymusic.png"></img></li>
+    <li><img src="mymusic.png"></img></li>
+    <li><img src="mymusic.png"></img></li>
+    </ul>
+            <ul>
+    <li><img src="mymusic.png"></img></li>
+    <li><img src="mymusic.png"></img></li>
+    <li><img src="mymusic.png"></img></li>
+    <li><img src="mymusic.png"></img></li>
+    <li><img src="mymusic.png"></img></li>
+    <li><img src="mymusic.png"></img></li>
+    <li><img src="mymusic.png"></img></li>
+    <li><img src="mymusic.png"></img></li>
+    <li><img src="mymusic.png"></img></li>
+    </ul>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,7 @@
+﻿Web平台：Apache Tomcat 6
+配置步骤：
+1.将upload.war放到Tomcat 6 的 webapp目录中。
+	例如下列目录：C:\Program Files\Apache Software Foundation\Tomcat 6.0\webapps
+2.重启Tomcat 6服务
+3.修改ScreenCapture.html中PostUrl地址，一般情况为 http://127.0.0.1:8080/upload/upload.jsp
+4.在IE中打开ScreenCapture.html开始测试。

@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>setCookie</title>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>test2</title>
+<script type="text/javascript">
+
+		//写cookie
+		function writeCookie(name, value, hours){ 
+		var expire = ""; 
+		if(hours != null){ 
+		  expire = new Date((new Date()).getTime() + hours * 3600000); 
+		  expire = "; expires=" + expire.toGMTString(); 
+		} 
+		document.cookie = name + "=" + escape(value) + expire; 
+		} 
+		
+		//获得cookie
+		function getCookie(Name) 
+		{ 
+			var search = Name + "=" ;
+			
+			if(document.cookie.length > 0) 
+			{ 
+			  
+				offset = document.cookie.indexOf(search) 
+				if(offset != -1) 
+				{ 
+					offset += search.length 
+					end = document.cookie.indexOf(";", offset) 
+					if(end == -1) end = document.cookie.length 
+					return unescape(document.cookie.substring(offset, end)) 
+				} 
+				else return "";
+			} 
+		} 
+     //点击如片获得cookie
+	function getName(){
+			var button=document.getElementById("button");
+			var inhtml=document.getElementById("inhtml");
+			button.onclick=function(){
+				
+				var name=getCookie("username") ;
+				
+				inhtml.innerHTML=name;
+			}
+		
+		}
+		//点击提交写入cookie
+	function add(){
+		var connect=document.getElementById("connect");
+		alert(connect.value);
+		
+		writeCookie("username", connect.value,24);
+		}
+
+</script>
+</head>
+
+<body onload="getName();">
+
+</body>
+
+
+<form onsubmit="add();">
+	<input type="text"  id="connect"/>
+    <input type="submit" value="提交" />
+</form>
+
+<span id="inhtml"></span>
+
+</head>
+
+<body>
+</body>
+</html>

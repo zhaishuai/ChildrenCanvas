@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>test2</title>
+
+
+<script type="text/javascript"> 
+function getvalue() 
+{ 
+
+///test2.html?parm1=myimg1&parm2=myimg2
+	//获得第一个属性
+	var url=location.href; 
+	var tmp1=url.split("?")[1]; 
+	var tmp2=tmp1.split("&")[0]; 
+	var tmp3=tmp2.split("=")[1]; 
+	var parm1=tmp3; 
+	//获得第二个属性
+	/*
+	var tmp9=url.split("?")[1]; 
+	var tmp4=tmp9.split("&")[1]; 
+	var tmp5=tmp4.split("=")[1]; 
+	var parm2=tmp5; 
+	*/
+	var inhtml= document.getElementById("inhtml");
+	inhtml.innerHTML=parm1;
+	//alert(parm1); 
+} 
+</script> 
+
+</head>
+
+<body onload="getvalue();">
+
+<h2>测试</h2>
+<span id="inhtml"> </span>
+
+</body>
+</html>

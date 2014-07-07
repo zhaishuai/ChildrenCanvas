@@ -1,0 +1,13 @@
+源码说明：
+
+1.upload文件夹是用jspsmart上传组件开发的；
+  核心包在net.wl.upload.core下面
+  上传方法在net.wl.upload.web.upload.java中
+  调用地址：http://ip:port/projectName/upload.jsp
+   
+2.uploadservlet文件夹是用commons-fileupload-1.2.1.jar开发的，
+  就一个servlet实现;
+  调用地址：http://ip:port/projectName/upload/
+
+
+两个工程可以通过http://ip:port/projectName/ 访问测试上传情况
